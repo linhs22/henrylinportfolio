@@ -1,170 +1,106 @@
-<!doctype html>
-<html lang="en">
+<!-- Demo Layout for Bootstrap (with cards) -->
+<!DOCTYPE html>
+<html lang="en-us">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+
+  <!-- We need to bring in the bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Simple</title>
+  <link rel="stylesheet" href="assets/css/style.css
+  ">
 
 </head>
 
 <body>
 
-
+  <!-- NavBar (copied and pasted from WC3) -->
+  <!-- Static navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Henry Lin</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <a id="titlehead" class="navbar-brand" href="#">Henry Lin</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li> -->
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
   </nav>
 
-  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="10000">
-        <img src="assets/images/lake.jpg" class="d-block" alt="lake">
-        <div class="container">
-          <div class="carousel-caption">
-            <div class="cap1">
-              <h1 id="welcome">Welcome!</h1>
-            </div>
+  <!-- Main Body goes in Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <h1 id="about">About Me</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="img img-thumbnail" id="henrypic" src="assets/images/IMG_7320.jpeg" alt="henrypic">
           </div>
+          <div class="col-md-8">
+            <p>
+              Hi! My name is Henry Lin and I am young professional pursing a career in data science and business
+              analytics. I was born in Japan, but raised in Seattle since I was a year old. As a child, grew up speaking
+              Japanese. I've always had a passion for the sciences and baseball.
+            </p>
+            <p>
+              During my time at Whitman college while studying mathematics and physics as well a chinese, I also had the
+              opportunity to college baseball. Outside of studying and practice, I also volunteered at a local
+              elemenatary school and became the marketing directory for our events board.
+            </p>
+            <p>
+              For the past few months, I was an Interpreter/Quality Control Intern for the Seattle Mariners. During my
+              time there, I was exposed to the world of analytics and presenting data in a way that is easier to
+              interpret.
+            </p>
+            <p>
+              I am interested in pursuing a career in the field of business analytics and would welcome the opportunity
+              to bring my analytical background, strong communication skills, and the skills I learned as a Quality
+              Control Intern to a postion in Data Science and Business Analytics.
+            </P>
+          </div>
+
         </div>
       </div>
-      <div class="carousel-item" data-interval="2000">
-        <img src="assets/images/mountain.jpg" class="d-block" alt="mountain">
-        <div class="container">
-          <div class="carousel-caption">
-            <div class="cap2">
-              <h1>Who am I?</h1>
-              <p class="lead">I am a young professional trying break into the business analytics and data science industry. Click on the about me below to get to know me!</p>
-              <a class="btn btn-large btn-primary" href="about.html">About me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/images/road.jpg" class="d-block" alt="road">
-        <div class="container">
-          <div class="carousel-caption">
-            <div class="cap3">
-              <h1>Want to learn more?</h1>
-              <p class="lead">Click the button below to contact me. I love getting to know more people!</p>
-              <a class="btn btn-large btn-primary" href="contact.html">Contact</a>
-            </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Web Developer</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Address</h6>
+            <p class="card-text">1325 4th Ave #400, Seattle, WA 98101</p>
+            <a href="#" class="card-link">Map</a>
+            <a href="#" class="card-link">Resources</a>
           </div>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 
+  <footer class="page-footer navbar-dark bg-dark">
 
-  <!-- /END THE FEATURETTES -->
-
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-        </ul>
-      </div>
+    <!-- Copyright -->
+    <div id="foot" class="footer-copyright text-center py-3">© 2018 Copyright: Henry Lin
     </div>
-    <div class="row"> 
-      <div class="col-12 col-md">
-        <small class="d-block mb-3 text-muted">&copy; Henry Lin 2019</small>
-      </div>
-    </div>
+    <!-- Copyright -->
+  
   </footer>
 
-  <!-- <footer class="bd-footer text-muted">
-              <div class="container-fluid p-3 p-md-5">
-                <ul class="bd-footer-links">
-                  <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
-                  <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
-                  <li><a href="/docs/4.3/examples/">Examples</a></li>
-                  <li><a href="/docs/4.3/about/overview/">About</a></li>
-                </ul>
-                <p>Designed and built with all the love in the world by the <a href="/docs/4.3/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-                <p>Currently v4.3.1. Code licensed <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
-              </div>
-      </footer> -->
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-  <script src="/docs/4.3/assets/js/docs.min.js"></script>
 </body>
 
 </html>
