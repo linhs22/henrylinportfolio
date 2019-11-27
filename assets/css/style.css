@@ -1,5 +1,10 @@
+#portfolio {
+    padding: 10px 19px;
+    margin-top: 10px;
+}
 #about {
-    padding: 0 19px;
+    padding: 10px 19px;
+    margin: 10px 0px;
 }
 
 .nav-item {
