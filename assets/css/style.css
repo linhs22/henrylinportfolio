@@ -38,7 +38,9 @@ img {
   .text {
     color: black;
     font-size: 16px;
-    padding: 16px 32px;
+    padding: 16px 0px;
+    top: 50%;
+    left: 50%;
   }
 
   .homeHeader {
